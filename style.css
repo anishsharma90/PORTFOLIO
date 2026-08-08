@@ -93,7 +93,7 @@ nav a.active{
     nav{
         display: flex;
         flex-wrap: nowrap;
-        gap: 0.8rem;
+        gap: 1rem;
         justify-content: flex-start;
         width: 100%;
         overflow-x: auto;
@@ -105,12 +105,20 @@ nav a.active{
         font-size: 1.4rem;
         white-space: nowrap;
         flex: 0 0 auto;
+        padding: 0.7rem 1rem;
+        border-radius: 1rem;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active{
+        background-color: rgba(183, 75, 75, 0.12);
     }
 }
 
 @media (max-width: 600px){
     :root{
-        --scroll-offset: 6rem;
+        --scroll-offset: 7.2rem;
     }
 
     header{
@@ -123,7 +131,7 @@ nav a.active{
 
     nav{
         justify-content: flex-start;
-        gap: 0.6rem 0.8rem;
+        gap: 1rem;
         flex-wrap: nowrap;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
@@ -132,6 +140,8 @@ nav a.active{
     nav a{
         font-size: 1.1rem;
         white-space: nowrap;
+        padding: 0.65rem 0.9rem;
+        border-radius: 0.9rem;
     }
 }
 
